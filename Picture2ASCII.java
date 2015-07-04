@@ -14,13 +14,13 @@ import java.awt.image.DataBufferByte;
 */
 public class Picture2ASCII {
 	
-	/**bytesPerPixel contains the color depth of compatible images. It is specified as a class member to make easier further modifications of this property*/
-	private int bytesPerPixel = 3;//Working with 24 bpp pictures by default -> 3Bytes 
+    /**bytesPerPixel contains the color depth of compatible images. It is specified as a class member to make easier further modifications of this property*/
+    private int bytesPerPixel = 3;//Working with 24 bpp pictures by default -> 3Bytes 
 	
-	/**pixels is the array of bytes where the input image will be saved before starting the conversion procedure. It will be accessed by all working threads*/
-	private byte[] pixels;
+    /**pixels is the array of bytes where the input image will be saved before starting the conversion procedure. It will be accessed by all working threads*/
+    private byte[] pixels;
 	
-	/**bytesPerLine is an auxiliary variable to store the number of bytes corresponding to a single input image row*/
+    /**bytesPerLine is an auxiliary variable to store the number of bytes corresponding to a single input image row*/
     private int bytesPerLine;
     
     /**pictureHeight stores the height of the input image in lines/rows*/
