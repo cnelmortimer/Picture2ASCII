@@ -9,9 +9,9 @@
 
 public class Picture2ASCIIResult {
 	
-	/** resultCode contains the operation result of the request. The proposed values are: 0: Not done;; 1: OK;; 2: Bad Input;; 3: Bad Parameters;; 4: Unexpected Error */
-	private int resultCode;
-	/** resultData should contains the input image converted to ASCII when the request was correctly processed*/
+    /** resultCode contains the operation result of the request. The proposed values are: 0: Not done;; 1: OK;; 2: Bad Input;; 3: Bad Parameters;; 4: Unexpected Error */
+    private int resultCode;
+    /** resultData should contains the input image converted to ASCII when the request was correctly processed*/
     private String resultData;
 
     /**Constructor to generate a Picture2ASCIIResult by specifying it result code and data
