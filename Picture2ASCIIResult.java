@@ -12,13 +12,13 @@ public class Picture2ASCIIResult {
     /** resultCode contains the operation result of the request. The proposed values are: 0: Not done;; 1: OK;; 2: Bad Input;; 3: Bad Parameters;; 4: Unexpected Error */
     private int resultCode;
     /** resultData should contains the input image converted to ASCII when the request was correctly processed*/
-    private String resultData;
+    private String[] resultData;
 
     /**Constructor to generate a Picture2ASCIIResult by specifying it result code and data
      * @param resultCode	The result linked to the generation of the ASCII picture
      * @param resultData	The converted ASCII picture
      * @return 				A Picture2ASCIIResult object*/
-    public Picture2ASCIIResult(int resultCode, String resultData)    {
+    public Picture2ASCIIResult(int resultCode, String[] resultData)    {
         this.resultCode = resultCode;
         this.resultData = resultData;
     }
@@ -37,13 +37,13 @@ public class Picture2ASCIIResult {
     
     /**Getter to read the converted image when correctly created
      * @return 				The image converted to ASCII*/
-    public String getResultData(){
+    public String[] getResultData(){
         return this.resultData;
     }
     
     /**Setter to write the result code. It should be only used by the core class Pictre2ASCII
      * @param resultData	The String data with the converted to ASCII image*/
-    protected void setResultData(String resultData){
+    protected void setResultData(String[] resultData){
         this.resultData = resultData;
     }
 }
